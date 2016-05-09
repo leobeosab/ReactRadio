@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style/style.css"> </head>
+
+<body>
+    <div class="nav">
+        <h1>React Radio (GOOGLE DON'T SUE ME)</h1>
+    </div>
+    
+    <div class="volume-wrapper">
+        <div class="volume-header">
+            <h3> Volume </h3>
+        </div>
+        <div class="volume-controller">
+            <input type="range" min="0" max="1" step="0.01" defaultValue=".5" onChange={ volumeChange }></input>
+        </div>
+    </div>
+    
+    <table class="playlist">
+        <tr class="table-header">
+            <th><span> <br> </span> </th>
+            <th><span class="track__title">Track Title &#x25BC</span></td>
+                <th><strong class="track__artist">Artist &#x25BC</strong></td>
+        </tr>
+        <tr class="track track--playing">
+            <td>
+                <button class="track__button"> P</button>
+            </td>
+            <td><span class="track__title">Track Title</span></td>
+            <td><strong class="track__artist">Artist</strong></td>
+        </tr>
+        <tr class="track">
+            <td>
+                <button class="track__button"> S</button>
+            </td>
+            <td><span class="track__title">Track Title</span></td>
+            <td><strong class="track__artist">Artist</strong></td>
+        </tr>
+        <tr class="track">
+            <td>
+                <button class="track__button"> S</button>
+            </td>
+            <td><span class="track__title">Track Title</span></td>
+            <td><strong class="track__artist">Artist</strong></td>
+        </tr>
+    </table>
+
+    <div class="form-container">
+        <div class="form-header">
+            <h2> Add Track </h2>
+        </div>
+    <form class="form">
+        <div class="form__row">
+            <label class="form__label">Audio Source</label> <br>
+            <input class="form__text" type="text" placeholder="http://someurl.com/sound.mp3" />
+        </div>
+        <div class="form__row">
+            <label class="form__label">Artist</label> <br>
+            <input class="form__text" type="text" placeholder="Artist name" />
+        </div>
+        <div class="form__row">
+            <label class="form__label">Track</label> <br>
+            <input class="form__text" type="text" placeholder="Track title" />
+        </div>
+        <button class="form__button">+</button>
+    </form>
+    </div>
+</body>
+
+</html>
