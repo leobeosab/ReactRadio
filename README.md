@@ -1,2 +1,2 @@
 # ReactRadio
-Simple radio build with React and Redux for an interview.
+Simple radio built with React and Redux for an interview.
